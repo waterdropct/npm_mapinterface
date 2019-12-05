@@ -17,13 +17,13 @@ module.exports = function getBingMapData(options, callBack){
         include_neighborhood: reciveOptions.inclnb || 0, // Is Include includeNeighborhood, default is not
         output_culture: reciveOptions.culture || '' //culture config options (www.bingmap.cn/guide/58bafd44-5a31-4aba-8fb0-f836374d71f6?module=doc)
     }
-    if(options.isPoint){
+    if(options.isPoint){ // search by location
         if(!reciveOptions.point_coord){
             throw Error('point_coord is must but empty')
         }
         finallyOptions.urlMap = BING_REST_URL + '/' + reciveOptions.point_coord + '?';
     }else{
-        if(!reciveOptions.key_word){
+        if(!reciveOptions.key_word){ // search by keyword
             throw Error('key_word is must but empty')
         }
         finallyOptions.urlMap = BING_REST_URL + '?q=' + reciveOptions.key_word + '&';

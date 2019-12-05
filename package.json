@@ -1,7 +1,7 @@
 {
   "name": "mapinterface",
-  "version": "0.0.1",
-  "description": "npm package of map rest web service, bing map, keyWord query, point query",
+  "version": "1.0.0",
+  "description": "npm package of map web rest api service, bingMap, aMap, keyWord query, point query, ip query",
   "main": "index.js",
   "scripts": {
     "compile": "babel -d lib/ src/",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/hcLei/npm_mapinterface.git"
   },
-  "keywords": ["map", "web", "service", "point", "keyword"],
+  "keywords": ["map", "bingMap", "aMap", "web", "api", "point", "keyword", "ip"],
   "author": "leihechao",
   "license": "ISC",
   "bugs": {
